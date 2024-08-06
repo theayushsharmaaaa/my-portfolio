@@ -3,73 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ayush Sharma's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
 </head>
-<body>
+<body class="dark-theme">
     <header>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#awards">Awards and Honors</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#positions">Position of Responsibility</a></li>
+                <li><a href="#activities">Extracurricular Activities</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" onclick="toggleTheme()">🌙</button></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="home">
-            <h1>Your Name</h1>
-            <p>Summary about who you are...</p>
+            <h1>Ayush Sharma</h1>
+            <p>Computer Science and Artificial Intelligence Student</p>
+            <p><a href="https://www.github.com/theayushsharmaaaa">GitHub</a> | <a href="https://theayushsharmaaaa.github.io/my-portfolio/">Portfolio</a></p>
         </section>
-
         <section id="education">
             <h2>Education</h2>
-            <p>Details about your education...</p>
+            <div class="content-box">
+                <h3>Plaksha University, Mohali</h3>
+                <p>BTech in Computer Science and Artificial Intelligence, 2026</p>
+                <p>GPA: 8.2/10</p>
+            </div>
+            <div class="content-box">
+                <h3>Delhi Model Public School, Patna</h3>
+                <p>12th CBSE, 2022</p>
+                <p>Score: 91.8%</p>
+            </div>
+            <div class="content-box">
+                <h3>New Era High School, Patna</h3>
+                <p>10th CBSE, 2020</p>
+                <p>Score: 98.4%</p>
+            </div>
         </section>
-
         <section id="experience">
             <h2>Experience</h2>
-            <p>Details about your experience...</p>
+            <div class="content-box">
+                <h3>Senior Teaching Assistant</h3>
+                <p>Young Technology Scholars Program, Plaksha University</p>
+                <p>April 2024 - June 2024</p>
+                <ul>
+                    <li>Taught 240 students electronics (KVL, KCL, transistors, logic gates) and circuit simulation using Tinkercad and breadboards.</li>
+                    <li>Led WISSH project; integrated DHT22, MQ135, LDR sensors with ESP32, using MQTT protocol (cloud) for smart home automation.</li>
+                    <li>Supported students in using Python Pandas to collect data from cloud servers and develop ML models for weather forecasting.</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Program Management Intern</h3>
+                <p>Young Technology Scholars Program, Plaksha University</p>
+                <p>May 2023 - June 2023</p>
+                <ul>
+                    <li>Coordinated activities for 200 students, including class scheduling and organizing daily recreational events.</li>
+                    <li>Led the Student Committee, planning and executing special events like Talent Night and Mentoring Panel.</li>
+                    <li>Managed procurement, event logistics, and monitored student participation to enhance overall experience.</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Administrative and Social Media Intern</h3>
+                <p>CTLC, Plaksha University</p>
+                <p>October 2022 - May 2023</p>
+                <ul>
+                    <li>Managed social media platforms, increasing engagement by 30% through targeted content and Google advertising campaigns.</li>
+                    <li>Coordinated Write-a-thon and Onboarding events, leading a cross-functional team to execute 5+ successful events.</li>
+                    <li>Designed custom mementos for CTLC interns and crafted the cover for Dr. Brainerd Prince's book "Ontology of Research".</li>
+                </ul>
+            </div>
         </section>
-
+        <section id="awards">
+            <h2>Awards and Honors</h2>
+            <div class="content-box">
+                <ul>
+                    <li>Finalist at Hack Plaksha’24</li>
+                    <li>Bharti Scholar, awarded by the Bharti Foundation to top 20 students from the entire cohort at Plaksha University.</li>
+                    <li>Secured 2nd Position at HOUSE OF SHARKS organized by Miranda House, DU for sustainable business idea pitch.</li>
+                    <li>Academic Excellence Award for securing 100% score in Mathematics and Computer Application in class 10th.</li>
+                </ul>
+            </div>
+        </section>
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/yourusername/yourproject1" target="_blank">Project 1</a></li>
-                <li><a href="https://github.com/yourusername/yourproject2" target="_blank">Project 2</a></li>
-                <!-- Add more projects as needed -->
-            </ul>
+            <div class="content-box">
+                <h3><a href="https://theayushsharmaaaa.github.io/sorting-algorithm-visualizer/">Sorting Algorithm Visualizer</a></h3>
+                <p>Personal Project | July 2024</p>
+                <p>Developed an innovative web app using JavaScript, HTML, and CSS to visualize Bubble, Insertion, Selection, Merge, and Quick Sort.</p>
+                <p>Implemented user controls for dynamic array generation, sorting speed adjustment, and algorithm selection.</p>
+            </div>
+            <div class="content-box">
+                <h3><a href="https://github.com/theayushsharmaaaa/malware-detection-cnn-lstm">Malware Detection Model Using CNN-LSTM</a></h3>
+                <p>Plaksha University | January 2024 - May 2024</p>
+                <p>Engineered a CNN-LSTM machine learning model for PE files, with 99% precision and 0.86 F1-score utilizing TensorFlow, Keras.</p>
+                <p>Conducted EDA, data preprocessing, and hyperparameter tuning to optimize performance using Flask at backend.</p>
+            </div>
+            <div class="content-box">
+                <h3>Mobile Infectious Disease Control Bot</h3>
+                <p>Plaksha University | January 2024 - Present</p>
+                <p>Developing an autonomous robot using Python and ROS for healthcare setting to minimize healthcare worker’s exposure in wards.</p>
+                <p>Successfully simulated A*, VSLAM, and SLAM path planning algorithms on custom hospital maps with patient interaction.</p>
+            </div>
         </section>
-
-        <section id="achievements">
-            <h2>Achievements</h2>
-            <p>Details about your achievements...</p>
-        </section>
-
-        <section id="certificates">
-            <h2>Certificates</h2>
-            <p>Details about your certificates...</p>
-        </section>
-
         <section id="skills">
             <h2>Skills</h2>
-            <p>Details about your skills...</p>
+            <div class="content-box">
+                <ul>
+                    <li>Languages: Python, JavaScript, C/C++, Bash, SQL(SQLite, MySQL)</li>
+                    <li>Frameworks: Flask, React, LangChain</li>
+                    <li>Libraries: Pandas, NumPy, SciPy, PyTorch, TensorFlow, OpenCV, BeautifulSoup4, Matplotlib, Sci-Kit-Learn</li>
+                    <li>Tools/Tech: Git, API Development, Linux/Unix, HuggingFace, Object-Oriented Programming</li>
+                    <li>Others: HTML, CSS, Shell Scripting, MATLAB, LATEX, Digital Marketing, Influencer Outreach, Brand Collaboration</li>
+                </ul>
+            </div>
         </section>
-
+        <section id="positions">
+            <h2>Position of Responsibility</h2>
+            <div class="content-box">
+                <h3>General Secretary</h3>
+                <p>Student Council, Plaksha University</p>
+                <p>2023 - Present</p>
+                <ul>
+                    <li>Manage and oversee the working of student council, drafted the council constitution and ensured smooth workflows within.</li>
+                </ul>
+            </div>
+            <div class="content-box">
+                <h3>Outreach & Events Lead</h3>
+                <p>Finance Cell, Plaksha University</p>
+                <p>2024 - Present</p>
+                <ul>
+                    <li>Led Inter-University Stockathon, drove engagement via social media, attracting 150+ institutions and 400+ students for the event.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="activities">
+            <h2>Extracurricular Activities</h2>
+            <div class="content-box">
+                <h3>YouTube Content Creator</h3>
+                <p>YouTube | 2020 - 2021</p>
+                <p>Created Ed-Tech content over YouTube, acquired strong video editing skills and gained over 350,000+ views and 2000+ audience.</p>
+            </div>
+            <div class="content-box">
+                <h3>Academic Tutor, Volunteer</h3>
+                <p>Connect For | 2019 - 2021</p>
+                <p>Tailored video content for specially abled students through story telling, tutored mathematics and science to 9-10 grade students.</p>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Details about how to contact you...</p>
+            <div class="content-box">
+                <p>Ayush Sharma</p>
+                <p>Phone: +91 82358 53952</p>
+                <p>Email: <a href="mailto:ayush.sharma1@plaksha.edu.in">ayush.sharma1@plaksha.edu.in</a></p>
+            </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Ayush Sharma</p>
     </footer>
 </body>
 </html>
